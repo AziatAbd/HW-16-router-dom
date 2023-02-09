@@ -20,7 +20,7 @@ const Products = ({ onVisible }) => {
         {products.map((item) => (
           <StyledLi key={item.id}>
             {item.title}
-            <StyledLink onClick={onVisible} to={`${item.id}/details`}>
+            <StyledLink onClick={onVisible} to={`${item.id}`}>
               details
             </StyledLink>
           </StyledLi>

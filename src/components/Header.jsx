@@ -30,6 +30,7 @@ const StyledNav = styled.nav`
   justify-content: space-around;
   width: 100%;
   color: #fff;
+  align-items: center;
 `;
 
 const NavList = styled.ul`

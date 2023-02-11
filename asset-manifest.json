@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/HW-16-router-dom/static/css/main.073c9b0a.css",
-    "main.js": "/HW-16-router-dom/static/js/main.2079ae2a.js",
+    "main.js": "/HW-16-router-dom/static/js/main.24024cb7.js",
     "index.html": "/HW-16-router-dom/index.html",
     "main.073c9b0a.css.map": "/HW-16-router-dom/static/css/main.073c9b0a.css.map",
-    "main.2079ae2a.js.map": "/HW-16-router-dom/static/js/main.2079ae2a.js.map"
+    "main.24024cb7.js.map": "/HW-16-router-dom/static/js/main.24024cb7.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.2079ae2a.js"
+    "static/js/main.24024cb7.js"
   ]
 }

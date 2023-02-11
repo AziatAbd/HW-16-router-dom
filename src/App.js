@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Route, Routes, useNavigate } from "react-router-dom";
 import styled, { createGlobalStyle } from "styled-components";
 import "./App.css";
@@ -11,29 +10,19 @@ import ProductPage from "./pages/ProductPage";
 
 function App() {
   const navigate = useNavigate();
-  const [isVisible, setVisible] = useState(false);
-
-  const onVisible = () => {
-    setVisible(true);
-  };
 
   return (
     <div className="App">
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route
-          path="/products"
-          element={<ProductPage isVisible={isVisible} onVisible={onVisible} />}
-        >
-          <Route path=":productId" element={<ProductDetail />} />
-        </Route>
+        <Route path="/products/" element={<ProductPage />} />
+
+        <Route path="/products/:productId" element={<ProductDetail />} />
         <Route path="/my-card" element={<MyCard />} />
         <Route path="/my-orders" element={<MyOrders />} />
       </Routes>
-      <StyledButton onClick={() => navigate(-1) || setVisible(false)}>
-        Go back
-      </StyledButton>
+      <StyledButton onClick={() => navigate(-1)}>Go back</StyledButton>
       <GlobalStyle />
     </div>
   );

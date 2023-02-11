@@ -13,14 +13,14 @@ const products = [
   },
 ];
 
-const Products = ({ onVisible }) => {
+const Products = () => {
   return (
     <div>
       <StyledUl>
         {products.map((item) => (
           <StyledLi key={item.id}>
             {item.title}
-            <StyledLink onClick={onVisible} to={`${item.id}`}>
+            <StyledLink to={`${item.id}`}>
               details
             </StyledLink>
           </StyledLi>

@@ -1,10 +1,11 @@
 import React from "react";
-import { Outlet } from "react-router-dom";
 import Products from "../components/Products";
 
-const ProductPage = ({ isVisible, onVisible }) => {
+const ProductPage = () => {
   return (
-    <div>{isVisible ? <Outlet /> : <Products onVisible={onVisible} />}</div>
+    <div>
+      <Products />
+    </div>
   );
 };
 
